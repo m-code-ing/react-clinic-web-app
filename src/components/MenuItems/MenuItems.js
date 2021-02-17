@@ -6,9 +6,9 @@ export default function MenuItems() {
     return (
         <div className={classes.MenuItems}>
             <ul>
-                <li>Dashboard</li>
-                <li>Appointment Calender</li>
-                <li>Patients</li>
+                <li><a href="">Dashboard</a></li>
+                <li><a href="">Calender</a></li>
+                <li><a href="">Patients</a></li>
             </ul>
         </div>
     )

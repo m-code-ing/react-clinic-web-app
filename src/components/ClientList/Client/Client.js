@@ -5,6 +5,7 @@ import classes from './Client.module.css'
 export default function Client() {
     return (
         <div className={classes.Client}>
+            
             <div className={classes.Client_div_name_age_gender}>
                 <p><small><strong>Mayank Ashok</strong></small></p>
                 <div>
