@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import ClientList from './components/ClientList/ClientList';
+
+// Importing Components
+import NavBar from './containers/NavBar/NavBar'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <nav>
+        <NavBar/>
+      </nav>
+      <main>
+        {/* Place holder for list of patients */}
+        <div>
+          {/* Row for details of one patient.. should include: Name, Age, Gender, Treatment Status: Next Appointment/Last Appointment */}
+          <div>
+            <ClientList/>
+          </div>
+        </div>
+      </main>
     </div>
   );
 }
