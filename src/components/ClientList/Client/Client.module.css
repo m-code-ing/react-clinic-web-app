@@ -3,9 +3,8 @@
     height: auto;
     margin: 4px 0;
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
 
     background-color: cornsilk;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -17,7 +16,7 @@
     padding: 2px 10px;
 }
 
-.Client_div_name_age_gender{
+.Client_name_age_gender_div{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,8 +25,42 @@
     background-color: white;
 }
 
-.Client_div_name_age_gender > div{
+.Client_name_age_gender_div > div{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
+}
+
+.Client_Right_Section{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.Client_status_div{
+    /* border: 1px solid green; */
+}
+
+
+.Client_Detail_Button_Div{
+    padding: 0 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    border-left: 1px dotted rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) inset;
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+}
+.Client_Detail_Button_Div:hover{
+    background-color: white;
+}
+
+
+.Client_Detail_Button_Div button{
+    box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
+    background-color: lightyellow;
+    border-radius: 0.4rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
