@@ -4,13 +4,14 @@ import React, { Component } from 'react'
 import ClientList from '../../components/ClientList/ClientList';
 import SideBar from '../../components/SideBar/SideBar';
 import NavBar from '../NavBar/NavBar';
+import ClientForm from '../ClientForm/ClientForm';
 
 export default class Layout extends Component {
     state = {
         clients: [
             {
-                
-                id: Math.random()*1000,
+
+                id: Math.random() * 1000,
                 name: 'Mayank Ashok',
                 age: '34',
                 gender: 'Male',
@@ -30,8 +31,14 @@ export default class Layout extends Component {
                 <main className={classes.Main}>
                     {/* Side Bar */}
                     <SideBar />
-                    {/* Place holder for list of patients */}
-                    <ClientList clients={this.state.clients} />
+                    <div style={{ display: 'flex', flexDirection: 'column', width: '100%', border: '1px solid black' }}>
+                        {/* Add A Client Form */}
+                        <ClientForm />
+                        {/* Place holder for list of patients */}
+                        <ClientList clients={this.state.clients} />
+
+                    </div>
+
                 </main>
             </div>
         )

@@ -1,0 +1,12 @@
+.ClientForm{
+    width: 50%;
+    height: auto;
+    padding: 5px;
+    margin: 3rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.ClientForm p{
+    text-align: center;
+    font-weight: bold;
+}
