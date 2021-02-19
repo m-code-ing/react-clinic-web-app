@@ -5,13 +5,12 @@ import ClientList from '../../components/ClientList/ClientList';
 import SideBar from '../../components/SideBar/SideBar';
 import NavBar from '../NavBar/NavBar';
 import ClientForm from '../ClientForm/ClientForm';
+import axios from 'axios';
 
 export default class Layout extends Component {
     state = {
         clients: [
-            {
-
-                id: Math.random() * 1000,
+            {   id: Math.random() * 1000,
                 name: 'Mayank Ashok',
                 age: '34',
                 gender: 'Male',
@@ -21,6 +20,22 @@ export default class Layout extends Component {
             }
         ]
     }
+
+    componentWillMount() {
+        axios.get('https://react-clinic-web-app-default-rtdb.firebaseio.com/client_data.json', this.state)
+        .then((res) => {
+            let clientData = Object.values(res.data);
+            console.log('clientData : ', clientData);
+            this.setState({
+                clients: clientData
+            })
+            console.log('State : ', this.state.clients);
+        })
+        .catch((error) => {
+            console.log("error : ", error);            
+        });
+    }
+    
 
     render() {
         return (

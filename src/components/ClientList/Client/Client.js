@@ -3,6 +3,7 @@ import React from 'react'
 import classes from './Client.module.css'
 
 export default function Client(props) {
+    console.log(props.status);
     return (
         <div className={classes.Client}>
 
