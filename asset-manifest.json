@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-clinic-web-app/static/css/main.1ac5d9a0.chunk.css",
+    "main.js": "/react-clinic-web-app/static/js/main.06e11235.chunk.js",
+    "main.js.map": "/react-clinic-web-app/static/js/main.06e11235.chunk.js.map",
+    "runtime-main.js": "/react-clinic-web-app/static/js/runtime-main.59b4992c.js",
+    "runtime-main.js.map": "/react-clinic-web-app/static/js/runtime-main.59b4992c.js.map",
+    "static/js/2.5eebf37b.chunk.js": "/react-clinic-web-app/static/js/2.5eebf37b.chunk.js",
+    "static/js/2.5eebf37b.chunk.js.map": "/react-clinic-web-app/static/js/2.5eebf37b.chunk.js.map",
+    "static/js/3.a79eec02.chunk.js": "/react-clinic-web-app/static/js/3.a79eec02.chunk.js",
+    "static/js/3.a79eec02.chunk.js.map": "/react-clinic-web-app/static/js/3.a79eec02.chunk.js.map",
+    "index.html": "/react-clinic-web-app/index.html",
+    "static/css/main.1ac5d9a0.chunk.css.map": "/react-clinic-web-app/static/css/main.1ac5d9a0.chunk.css.map",
+    "static/js/2.5eebf37b.chunk.js.LICENSE.txt": "/react-clinic-web-app/static/js/2.5eebf37b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.59b4992c.js",
+    "static/js/2.5eebf37b.chunk.js",
+    "static/css/main.1ac5d9a0.chunk.css",
+    "static/js/main.06e11235.chunk.js"
+  ]
+}
